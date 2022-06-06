@@ -12,7 +12,7 @@
 <TABLE ALIGN="center" BGCOLOR="lightgray" BORDER="1" WIDTH="75%">
 <TR><TD>Item</TD>
 <TD>Price</TD>
-<TD>Quantity</TD>
+<TD>Quantityyy</TD>
 <TD>Total Price</TD>
 </TR>
 <% for (int i=0; i<3; i++) { %> 
