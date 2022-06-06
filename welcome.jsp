@@ -11,7 +11,7 @@
 %>
 <TABLE ALIGN="center" BGCOLOR="lightgray" BORDER="1" WIDTH="75%">
 <TR><TD>Item</TD>
-<TD>Price</TD>
+<TD>Priceeeeeeeeee</TD>
 <TD>Quantityyy</TD>
 <TD>Total Price</TD>
 </TR>
