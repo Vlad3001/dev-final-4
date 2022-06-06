@@ -1,34 +1,27 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Multiplication tables</title>
-</head>
-<body>
-
-<h3>Welcome Proj</h3>
-<pre>
-<%
-String value = request.getParameter("number");
-try
-{
-	Integer number = Integer.parseInt(value);
-	for(int i=1;i<=10;i++)
-	{
-		out.println(number + " * " + i +" = " + (number*i)  );
-	}
-}
-catch(NumberFormatException e)
-{
-	out.println("Invalid number");
-}
+<HTML>
+<HEAD>
+    <TITLE>A Catalog Order Form</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN="center">A Sample Order Form</H1>
+<%! 
+    String item[] = {"DVD", "CD", "Diskette"};
+    double price[] = {19.99, 12.99, 1.99};
+    int quantity[] = {2, 9, 24};
 %>
-<pre>
-<br/>
-<br/>
-<p>&copy 2016 Preetham</p>
-
-</body>
-</html>
+<TABLE ALIGN="center" BGCOLOR="lightgray" BORDER="1" WIDTH="75%">
+<TR><TD>Item</TD>
+<TD>Price</TD>
+<TD>Quantity</TD>
+<TD>Total Price</TD>
+</TR>
+<% for (int i=0; i<3; i++) { %> 
+      <TR><TD><%= item[i] %></TD>
+      <TD><%= price[i] %></TD>
+      <TD><%= quantity[i] %></TD>
+      <TD><%= price[i] * quantity[i] %></TD>
+      </TR>
+<% } //end for loop %>
+</TABLE>
+</BODY>
+</HTML>
